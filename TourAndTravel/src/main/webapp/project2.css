@@ -1,0 +1,10 @@
+ .review .wrapper{
+			display: flex;
+			
+		}
+		@media  (max-width : 728px){
+			.review .wrapper{
+			display: block;
+			
+		}
+		}

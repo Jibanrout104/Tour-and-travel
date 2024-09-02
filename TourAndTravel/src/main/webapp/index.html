@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tour and travel</title>
+
+	<link rel="stylesheet" href="project.css">
+	<link rel="stylesheet" href="project2.css">
+	
+	
+</head>
+
+<body>
+	<header>
+		<!-- <div id="menu-bar" class="fas fa-bars" onclick="open()"></div> -->
+
+		<a href="#" class="logo"><span>T</span>our & <span>T</span>ravel</a>
+		<nav class="navbar" id="navbar">
+			<a href="#home">home</a>
+			<a href="#book">book</a>
+			<a href="#packages">packages</a>
+			<a href="#services">services</a>
+			<a href="#gallery">gallery</a>
+			<a href="#review">review</a>
+			<a href="#contact">contact</a>
+			<input type="search" id="search-bar" placeholder="search here...">
+
+		</nav>
+
+
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<a href="login.html"><i class="fas fa-user" id="login-btn"></i></a>
+
+		</div>
+		<!-- <form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="search here...">
+    <label for="search-bar" class="fas fa-search"></label>
+</form> -->
+
+	</header>
+
+
+	<!--home section-->
+	<section class="home" id="home">
+		<div class="content">
+			<h3 class="h3">adventure is worthwhile</h3>
+			<p>dicover new places with us,adventure awaits</p>
+			<a href="discovet.html" class="btn">discover more</a>
+		</div>
+
+		<div class="controls">
+			<span class="vid-btn" data-src="images/vid-1.mp4"></span>
+			<span class="vid-btn" data-src="images/vid-2.mp4"></span>
+			<span class="vid-btn" data-src="images/vid-3.mp4"></span>
+			<span class="vid-btn" data-src="images/vid-4.mp4"></span>
+			<span class="vid-btn" data-src="images/vid-5.mp4"></span>
+		</div>
+
+		<div class="video-container"></div>
+
+		<video src="./mixkit-white-sand-beach-background-1564.mp4" id="video-slider" loop autoplay muted=""></video>
+	</section>
+
+
+	<!--book section-->
+	<section class="book" id="book">
+		<h1 class="heading1">
+			<span>b</span>
+			<span>o</span>
+			<span>o</span>
+			<span>k</span>
+		
+			<span>n</span>
+			<span>o</span>
+			<span>w</span>
+		</h1>
+		<div class="row">
+			<div class="image">
+				<img src="./take-care-plants-vector-illustration_1031776-8988.avif" alt="">
+
+			</div>
+			<form action="">
+				<div class="inputBox">
+					<h3>where to</h3>
+
+					<input type="text" placeholder="place name">
+				</div>
+				<div class="inputBox">
+					<h3>how many</h3>
+					<input type="number" placeholder="number of guests">
+				</div>
+				<div class="inputBox">
+					<h3>arrivals</h3>
+					<input type="date">
+				</div>
+				<div class="inputBox">
+					<h3>leaving</h3>
+					<input type="date">
+				</div>
+				<input type="submit" class="btn" value="book now">
+			</form>
+		</div>
+
+	</section>
+
+
+	<!--package section-->
+
+	<section class="packages" id="packages">
+		<h1 class="heading">
+			<span>p</span>
+			<span>a</span>
+			<span>c</span>
+			<span>k</span>
+			<span>a</span>
+			<span>g</span>
+			<span>e</span>
+			<span>s</span>
+		</h1>
+		<div class="box-container">
+			<div class="box">
+				<img src="https://cdn.pixabay.com/photo/2018/04/25/09/54/architecture-3349103_640.jpg" alt="">
+				<div class="content">
+					<h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, numquam.
+					</p>
+					<div class="starts">
+
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+
+						<img class="img1" src="./1828970.png" alt="">
+					</div>
+					<div class="price">$90.00 <span>$120.00</span></div>
+					<a href="mumbai.html" class="btn">book now</a>
+				</div>
+			</div>
+
+
+			<div class="box">
+				<img src="./sydney-opera-house-354375_640.jpg" alt="">
+				<div class="content">
+					<h3><i class="fas fa-map-marker-alt"></i>sydney</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, numquam.
+					</p>
+					<div class="starts">
+
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+
+						<img class="img1" src="./1828970.png" alt="">
+					</div>
+					<div class="price">$90.00 <span>$120.00</span></div>
+					<a href="#" class="btn">book now</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="https://media.istockphoto.com/id/938335974/photo/aerial-view-of-kualoa-area-of-oahu-hawaii.jpg?s=612x612&w=0&k=20&c=OqqkjtRGFffwCx5Ac4kyfO9AReN-wnc6hGW8jJp7vok="
+					alt="">
+				<div class="content">
+					<h3><i class="fas fa-map-marker-alt"></i>hawaii</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, numquam.
+					</p>
+					<div class="starts">
+
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+
+						<img class="img1" src="./1828970.png" alt="">
+					</div>
+					<div class="price">$90.00 <span>$120.00</span></div>
+					<a href="#" class="btn">book now</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="./360_F_65117955_47wvGoxrEBcNUtZdzJVpdV78izYZYKiS.jpg" alt="">
+				<div class="content">
+					<h3><i class="fas fa-map-marker-alt"></i>paris</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, numquam.
+					</p>
+					<div class="starts">
+
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+
+						<img class="img1" src="./1828970.png" alt="">
+					</div>
+					<div class="price">$90.00 <span>$120.00</span></div>
+					<a href="#" class="btn">book now</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="./360_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.jpg" alt="">
+				<div class="content">
+					<h3><i class="fas fa-map-marker-alt"></i>tokyo</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, numquam.
+					</p>
+					<div class="starts">
+
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+
+						<img class="img1" src="./1828970.png" alt="">
+					</div>
+					<div class="price">$90.00 <span>$120.00</span></div>
+					<a href="#" class="btn">book now</a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="https://t4.ftcdn.net/jpg/02/43/60/05/360_F_243600569_wuobKhXlrYP6b2yH95t9TQ7MkT7sUxVG.jpg"
+					alt="">
+				<div class="content">
+					<h3><i class="fas fa-map-marker-alt"></i>egypt</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, numquam.
+					</p>
+					<div class="starts">
+
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+						<img class="img1" src="./929495.png" alt="">
+
+						<img class="img1" src="./1828970.png" alt="">
+					</div>
+					<div class="price">$90.00 <span>$120.00</span></div>
+					<a href="#" class="btn">book now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--services section-->
+
+	<section class="services" id="services">
+		<h1 class="heading">
+			<span>s</span>
+			<span>e</span>
+			<span>r</span>
+			<span>v</span>
+			<span>i</span>
+			<span>c</span>
+			<span>e</span>
+			<span>s</span>
+		</h1>
+
+		<div class="box-container">
+			<div class="box">
+				<a href="hotels.html"><img class="img1" src="https://i.pinimg.com/736x/10/ff/aa/10ffaadab6bc3c4c1dd4a3e44bf6d5ad.jpg" alt="">
+			<h3>affordable hotels</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium recusandae iure veniam, ipsam
+					mollitia molestiae vitae nemo error distinctio nam.
+				</p></a>
+			</div>
+
+			<div class="box">
+				<a href="food.html"><img class="img1"
+					src="https://img.freepik.com/premium-vector/food-beverage-logo-design-inspirations_527727-272.jpg"
+					alt="">
+				<h3>food and drinks</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium recusandae iure veniam, ipsam
+					mollitia molestiae vitae nemo error distinctio nam.
+				</p></a>
+			</div>
+			<div class="box">
+				<img class="img1"
+					src="https://www.pngitem.com/pimgs/m/266-2664655_file-iso-m-svg-consult-instructions-for-use.png"
+					alt="">
+				<h3>safety guide</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium recusandae iure veniam, ipsam
+					mollitia molestiae vitae nemo error distinctio nam.
+				</p>
+			</div>
+			<div class="box">
+				<img class="img1" src="https://brandlogos.net/wp-content/uploads/2021/12/world_bank-brandlogo.net_.png"
+					alt="">
+				<h3>around the world</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium recusandae iure veniam, ipsam
+					mollitia molestiae vitae nemo error distinctio nam.
+				</p>
+			</div>
+			<div class="box">
+				<img class="img1" src="https://i.pinimg.com/736x/17/79/a8/1779a8d32ef8e3117c70221dce7843e3.jpg" alt="">
+				<h3>fastest travel</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium recusandae iure veniam, ipsam
+					mollitia molestiae vitae nemo error distinctio nam.
+				</p>
+			</div>
+			<div class="box">
+				<a href=
+				"adventure.html"><img class="img1"
+					src="https://img.freepik.com/premium-vector/logo-hiking-adventure-await_643349-576.jpg" alt="">
+				<h3>adventures</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium recusandae iure veniam, ipsam
+					mollitia molestiae vitae nemo error distinctio nam.
+				</p></a>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!--gallery section-->
+
+	<section class="gallery" id="gallery">
+
+		<h1 class="heading">
+			<span>g</span>
+			<span>a</span>
+			<span>l</span>
+			<span>l</span>
+			<span>e</span>
+			<span>r</span>
+			<span>y</span>
+		</h1>
+		<div class="box-container">
+		<div class="box">
+				<img src="https://discover.educationmalaysia.gov.my/wp-content/uploads/2020/09/woman-tourist-with-tower.jpg"
+					alt="">
+				<h3>Malaysia</h3>
+				<p>Enchanting landscapes, diverse culture,monuments, tantalizing cuisine, and warm hospitality await tourists in this Southeast Asian gem.</p>
+				<a href="image.html" class="btn">see more</a>
+			</div>
+		
+		
+			<div class="box">
+				<img src="https://img.freepik.com/free-photo/beautiful-girl-standing-viewpoint-koh-nangyuan-island-near-koh-tao-island-surat-thani-thailand_335224-1094.jpg"
+					alt="">
+					<div class="content">
+					<h3>Thailand</h3>
+					<p>Discover Thailand's vibrant culture and stunning beaches. Explore ancient temples, bustling markets, and tropical islands. Unforgettable adventures await!</p>
+					<a href="thailand.html" class="btn">see more</a>
+				</div>
+
+			</div>
+			
+			<div class="box">
+				<img src="https://traveltradejournal.com/wp-content/uploads/2022/09/IMG-6323.jpg"
+					alt="">
+				<h3>South Korea</h3>
+				<p>Discover South Korea's vibrant culture, stunning landscapes, and modern cities. From historic sites to K-pop, it's a traveler's paradise.</p>
+				<a href="southkorea.html" class="btn">see more</a>
+			</div>
+			
+			<div class="box">
+				<img src="https://static.independent.co.uk/2022/08/24/12/iStock-1146262403.jpg?width=1200&height=900&fit=crop"
+					alt="">
+				<h3>Japan</h3>
+				<p>A land of ancient tradition and modern marvels. Discover serene temples, vibrant cities, and exquisite cuisine in this captivating country.</p>
+				<a href="japan.html" class="btn">see more</a>
+			</div>
+			
+			<div class="box">
+				<img src="https://www.canadavisa.com/images/_mobile/Visit-Canada_2022-11-21-164230_pkjl.jpg"
+					alt="">
+				<h3>Canada</h3>
+				<p>A vast land of natural beauty and vibrant cities, offers tourists stunning landscapes, diverse culture, and warm hospitality. Truly captivating!</p>
+				<a href="#" class="btn">see more</a>
+			</div>
+			<div class="box">
+				<img src="https://images.news18.com/ibnlive/uploads/2020/02/Donald-Trump-at-Taj-Mahal.jpg"
+					alt="">
+				<h3>India</h3>
+				<p>India, rich in culture and diversity, enchants tourists with its ancient monuments, vibrant festivals, delicious cuisine, and warm hospitality.</p>
+				<a href="india.html" class="btn">see more</a>
+			</div>
+			
+			<div class="box">
+				<img src="https://www.visitdubai.com/-/media/images/leisure/campaigns/ultimate-holidays-europe/ultimate-holiday-1600x1067-atlantis.jpg"
+					alt="">
+				<h3>United Arab Emirates</h3>
+				<p>Dubai's towering skyscrapers, Abu Dhabi's cultural landmarks, and Sharjah's rich heritage await adventurous tourists and delicious cuisine.</p>
+				<a href="#" class="btn">see more</a>
+			</div>
+			
+			<div class="box">
+				<img src="https://lp-cms-production.imgix.net/2023-04/GettyImages-1453171193.jpg"
+					alt="">
+				<h3>Switerzland</h3>
+				<p>Switzerland captivates with its pristine Alps, crystal lakes, charming cities, and precision. Every corner is a picture-perfect postcard for tourists.</p>
+				<a href="#" class="btn">see more</a>
+			</div>
+			<div class="box">
+				<img src="https://static.wanderon.in/wp-content/uploads/2023/10/gondola-ride-in-autumn-in-kashmir-2023-10-18t174214.790-min.png"
+					alt="">
+				<h3>Maldives</h3>
+				<p> Paradise of azure waters, white sands, and vibrant marine life. Dive into luxury, tranquility, and unforgettable tropical experiences.				</p>
+				<a href="#" class="btn">see more</a>
+			</div>
+			
+		</div>
+	</section>
+
+	<!--review section-->
+	<section class="review" id="review">
+		<h1 class="heading">
+			<span>r</span>
+			<span>e</span>
+			<span>v</span>
+			<span>i</span>
+			<span>e</span>
+			<span>w</span>
+		</h1>
+		<div class="review-slider">
+
+			<div class="wrapper">
+
+				<div class="slider">
+					<div class="box">
+						<img src="https://t3.ftcdn.net/jpg/03/22/53/38/360_F_322533850_Lz5JL2K0nVqL48gjCiRLSa2ssxpdfyer.jpg"
+							alt="">
+						<h3>john deo</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto veniam qui? Beatae
+							nulla consectetur mollitia, facilis nihil culpa odio?</p>
+						<div class="starts">
+
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+
+							<img class="img1" src="./1828970.png" alt="">
+						</div>
+					</div>
+
+				</div>
+				<div class="slider">
+					<div class="box">
+						<img src="https://t3.ftcdn.net/jpg/02/22/85/16/360_F_222851624_jfoMGbJxwRi5AWGdPgXKSABMnzCQo9RN.jpg"
+							alt="">
+						<h3>john deo</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto veniam qui? Beatae
+							nulla consectetur mollitia, facilis nihil culpa odio?</p>
+						<div class="starts">
+
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+
+							<img class="img1" src="./1828970.png" alt="">
+						</div>
+					</div>
+
+				</div>
+
+				<div class="slider">
+					<div class="box">
+						<img src="https://media.istockphoto.com/id/1309405076/photo/beauty-portrait-of-young-woman.jpg?s=612x612&w=0&k=20&c=cLbcreLu8ZetnZhEK5KAsmmqtvPyYucRX778b8mOzZ0="
+							alt="">
+						<h3>john deo</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto veniam qui? Beatae
+							nulla consectetur mollitia, facilis nihil culpa odio?</p>
+						<div class="starts">
+
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+
+							<img class="img1" src="./1828970.png" alt="">
+						</div>
+					</div>
+
+				</div>
+
+				<div class="slider">
+					<div class="box">
+						<img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
+							alt="">
+						<h3>john deo</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto veniam qui? Beatae
+							nulla consectetur mollitia, facilis nihil culpa odio?</p>
+						<div class="starts">
+
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+							<img class="img1" src="./929495.png" alt="">
+
+							<img class="img1" src="./1828970.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!--contact section-->
+
+	<section class="contact" id="contact">
+		<h1 class="heading">
+			<span>c</span>
+			<span>o</span>
+			<span>n</span>
+			<span>t</span>
+			<span>a</span>
+			<span>c</span>
+			<span>t</span>
+		</h1>
+
+		<div class="row">
+			<div class="image">
+				<img src="https://i.pinimg.com/474x/e2/23/4c/e2234cd89c1c31ef3d2bc62c4cc5861b.jpg" alt="">
+			</div>
+			<form action="Contactdb" method="post">
+				<div class="inputBox">
+					<input type="text" placeholder="name" name="name">
+					<input type="email" placeholder="email" name="email">
+				</div>
+				<div class="inputBox">
+					<input type="number" placeholder="number" name="number">
+					<input type="text" placeholder="subject" name="subject">
+				</div>
+				<textarea name="message" id="" cols="30" rows="10"></textarea>
+				<input type="submit" value="Send message" class="btn">
+			</form>
+		</div>
+
+	</section>
+
+
+
+	<!--footer section-->
+	<footer>
+		<div class="footercontainer">
+			<div class="icons">
+				<a href=""><img class="img2"
+						src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/facebook-512.png"
+						alt="" width="35px" height="35px"></a>
+				<img class="img2" src="https://i.pinimg.com/originals/63/9b/3d/639b3dafb544d6f061fcddd2d6686ddb.png"
+					alt="" width="50px" height="42px">
+
+				<img class="img2"
+					src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/whatsapp-512.png" alt=""
+					width="35px" height="35px">
+				<img class="img2"
+					src="https://cdn0.iconfinder.com/data/icons/info-graphics-2-5/64/youtuber_youtube_media-512.png"
+					alt="" width="35px" height="35px">
+			</div>
+			<div class="footernav">
+				<ul>
+					<li><a href="">home |</a></li>
+					<li><a href="">news |</a></li>
+					<li><a href="">contact us |</a></li>
+					<li><a href="">about |</a></li>
+					<li><a href="">our team</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="footerbottom">
+			<p>copyright &copy; 2024 ; Designed by <span class="designer">jiban & team</span></p>
+		</div>
+
+	</footer>
+
+
+
+
+
+
+
+	<script src="https://kit.fontawesome.com/ce4327b835.js" crossorigin="anonymous"></script>
+
+	<script src="jsscript.js"></script>
+</body>
+
+</html>

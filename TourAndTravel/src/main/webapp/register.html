@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>register</title>
+	<link rel="stylesheet" href="project.css">
+	<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+	<header>
+		<!-- <div id="menu-bar" class="fas fa-bars" onclick="open()"></div> -->
+
+		<a href="index.html" class="logo"><span>T</span>our & <span>T</span>ravel</a>
+		<nav class="navbar" id="navbar">
+			<a href="index.html">home</a>
+			<a href="#book">book</a>
+			<a href="#packages">packages</a>
+			<a href="#services">services</a>
+			<a href="#gallery">gallery</a>
+			<a href="#review">review</a>
+			<a href="#contact">contact</a>
+			<a href="login.html" onclick="open()">login</a>
+			<input type="search" id="search-bar" placeholder="search here...">
+
+		</nav>
+
+
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<!-- <i class="fas fa-user" id="login-btn" onclick="open()"></i> -->
+
+		</div>
+		<!-- <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form> -->
+
+	</header>
+	<div class="login-form-container">
+		<div id="loginform">
+			<i class="fas fa-time" id="form-close"></i>
+
+			<form action="SignUp" method="post">
+				<h3>Register</h3>
+				<input type="text" placeholder="enter your name" name="name" class="box">
+				<input type="number" placeholder="enter your phone number" name="contact" class="box">
+				<input type="email" class="box" name ="email" placeholder="enter your email">
+				<input type="password" class="box" name="createpass" placeholder="create password">
+				<input type="password" class="box" name="confirmpass" placeholder="confirm password">
+				<input type="submit" value="Register now" class="btn">
+
+				<p>have an account?<a href="login.html" class="registernow"> Login now</a></p>
+
+			</form>
+		</div>
+
+
+	</div>
+	<footer>
+		<div class="footercontainer">
+			<div class="icons">
+				<img class="img2"
+					src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/facebook-512.png" alt=""
+					width="35px" height="35px">
+				<img class="img2" src="https://i.pinimg.com/originals/63/9b/3d/639b3dafb544d6f061fcddd2d6686ddb.png"
+					alt="" width="50px" height="42px">
+
+				<img class="img2"
+					src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/whatsapp-512.png" alt=""
+					width="35px" height="35px">
+				<img class="img2"
+					src="https://cdn0.iconfinder.com/data/icons/info-graphics-2-5/64/youtuber_youtube_media-512.png"
+					alt="" width="35px" height="35px">
+			</div>
+			<div class="footernav">
+				<ul>
+					<li><a href="">home |</a></li>
+					<li><a href="">news |</a></li>
+					<li><a href="">contact us |</a></li>
+					<li><a href="">about |</a></li>
+					<li><a href="">our team</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="footerbottom">
+			<p>copyright &copy; 2024 ; Designed by <span class="designer">jiban & team</span></p>
+		</div>
+
+	</footer>
+
+	<script src="https://kit.fontawesome.com/ce4327b835.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

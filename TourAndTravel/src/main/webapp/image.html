@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Upload Page</title>
+<link rel="stylesheet" href="project.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 0 20px;
+ 
+  }
+  .heading1{
+            margin: 80px auto -30px;
+
+        }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+   
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    height: 200px;
+  }
+  .upload-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  .upload-btn:hover{
+    background-color: #fff;
+    color: black;
+    border:1px solid orange;
+  }
+</style>
+</head>
+<body>
+    <header>
+		<!-- <div id="menu-bar" class="fas fa-bars" onclick="open()"></div> -->
+
+		<a href="index.html" class="logo"><span>T</span>our & <span>T</span>ravel</a>
+		<nav class="navbar" id="navbar">
+			<a href="index.html">home</a>
+			<a href="#book">book</a>
+			<a href="#packages">packages</a>
+			<a href="#services">services</a>
+			<a href="#gallery">gallery</a>
+			<a href="#review">review</a>
+			<a href="#contact">contact</a>
+
+			<input type="search" id="search-bar" placeholder="search here...">
+
+		</nav>
+
+
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<a href="login.html"><i class="fas fa-user" id="login-btn"></i></a>
+
+		</div>
+		<!-- <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form> -->
+
+	</header>
+
+    <h1 class="heading1">
+        <span>i</span>
+        <span>m</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+        
+      
+        
+        
+        
+    </h1>
+<div class="container">
+  
+  
+  <div class="gallery">
+    <!-- Placeholder images -->
+    <img class="image" src="https://www.khmertimeskh.com/wp-content/uploads/2018/08/culture-heritage-2.jpg" alt="Placeholder Image">
+    <img class="image" src="https://ttgasia.2017.ttgasia.com/wp-content/uploads/sites/2/2018/03/Malaysia-tourists.jpg" alt="Placeholder Image">
+    <img class="image" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/11/malaysia-cover.jpg" alt="Placeholder Image">
+    <img class="image" src="https://i.pinimg.com/736x/d2/96/be/d296be710ee8b91f5b9cfbaa33ef3f93.jpg" alt="Placeholder Image">
+    <img class="image" src="https://ttgasia.2017.ttgasia.com/wp-content/uploads/sites/2/2019/05/Tourist-in-KL.jpg" alt="Placeholder Image">
+    <img class="image" src="https://img.jakpost.net/c/2020/02/19/2020_02_19_86993_1582103541._large.jpg" alt="Placeholder Image">
+    <img class="image" src="https://www.klia2.info/wp-content/uploads/tourism-malaysia-08a.webp" alt="Placeholder Image">
+    <img class="image" src="https://indiaoutbound.info/wp-content/uploads/2023/03/langkawi-malaysia-nature-travel.jpg" alt="Placeholder Image">
+    <img class="image" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2015/09/AFamosa-Fortress.jpg?tr=w-400" alt="Placeholder Image">
+    <img class="image" src="https://www.traveldailynews.asia/wp-content/uploads/2023/03/MALAYSIA.jpg" alt="Placeholder Image">
+
+    <!-- Add more images dynamically -->
+  </div>
+  
+  <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Upload Image</button>
+  <input type="file" id="fileInput" onchange="previewImage(event)" accept="image/*" multiple>
+</div>
+
+<script>
+  function previewImage(event) {
+    const gallery = document.querySelector('.gallery');
+    const files = event.target.files;
+
+    for (let file of files) {
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+        const image = document.createElement('img');
+        image.classList.add('image');
+        image.src = e.target.result;
+        image.alt = file.name;
+
+        gallery.appendChild(image);
+      };
+
+      reader.readAsDataURL(file);
+    }
+  }
+</script>
+
+<footer>
+    <div class="footercontainer">
+        <div class="icons">
+            <img class="img2"
+                src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/facebook-512.png" alt=""
+                width="35px" height="35px">
+            <img class="img2" src="https://i.pinimg.com/originals/63/9b/3d/639b3dafb544d6f061fcddd2d6686ddb.png"
+                alt="" width="50px" height="42px">
+
+            <img class="img2"
+                src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/whatsapp-512.png" alt=""
+                width="35px" height="35px">
+            <img class="img2"
+                src="https://cdn0.iconfinder.com/data/icons/info-graphics-2-5/64/youtuber_youtube_media-512.png"
+                alt="" width="35px" height="35px">
+        </div>
+        <div class="footernav">
+            <ul>
+                <li><a href="">home |</a></li>
+                <li><a href="">news |</a></li>
+                <li><a href="">contact us |</a></li>
+                <li><a href="">about |</a></li>
+                <li><a href="">our team</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footerbottom">
+        <p>copyright &copy; 2024 ; Designed by <span class="designer">jiban & team</span></p>
+    </div>
+
+</footer>
+
+<script src="https://kit.fontawesome.com/ce4327b835.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+</html>
